@@ -7,21 +7,21 @@
  * @since 1.0.0
  */
 
-$discussion = ! is_page() && twentynineteen_can_show_post_thumbnail() ? twentynineteen_get_discussion_data() : null; ?>
+$discussion = ! is_page() && genberg_can_show_post_thumbnail() ? genberg_get_discussion_data() : null; ?>
 
 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 <?php if ( ! is_page() ) : ?>
 <div class="entry-meta">
-	<?php twentynineteen_posted_by(); ?>
-	<?php twentynineteen_posted_on(); ?>
+	<?php genberg_posted_by(); ?>
+	<?php genberg_posted_on(); ?>
 	<span class="comment-count">
 		<?php
 		if ( ! empty( $discussion ) ) {
-			twentynineteen_discussion_avatars_list( $discussion->authors );
+			genberg_discussion_avatars_list( $discussion->authors );
 		}
 		?>
-		<?php twentynineteen_comment_count(); ?>
+		<?php genberg_comment_count(); ?>
 	</span>
 	<?php
 	// Edit post link.
@@ -29,7 +29,7 @@ $discussion = ! is_page() && twentynineteen_can_show_post_thumbnail() ? twentyni
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers. */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'twentynineteen' ),
+					__( 'Edit <span class="screen-reader-text">%s</span>', 'genberg' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -38,7 +38,7 @@ $discussion = ! is_page() && twentynineteen_can_show_post_thumbnail() ? twentyni
 				),
 				get_the_title()
 			),
-			'<span class="edit-link">' . twentynineteen_get_icon_svg( 'edit', 16 ),
+			'<span class="edit-link">' . genberg_get_icon_svg( 'edit', 16 ),
 			'</span>'
 		);
 	?>
