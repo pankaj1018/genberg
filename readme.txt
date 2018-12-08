@@ -1,6 +1,6 @@
 # Twenty Nineteen
 
-[![Build Status](https://travis-ci.org/WordPress/twentynineteen.svg?branch=master)](https://travis-ci.org/WordPress/twentynineteen)
+[![Build Status](https://travis-ci.org/WordPress/genberg.svg?branch=master)](https://travis-ci.org/WordPress/genberg)
 
 **Contributors:** the WordPress team  
 **Requires at least:** WordPress 4.9.6  
