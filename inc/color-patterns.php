@@ -10,7 +10,7 @@
 /**
  * Generate the CSS for the current primary color.
  */
-function twentynineteen_custom_colors_css() {
+function genberg_custom_colors_css() {
 
 	if ( 'default' === get_theme_mod( 'primary_color', 'default' ) ) {
 		$primary_color = 199;
@@ -26,19 +26,19 @@ function twentynineteen_custom_colors_css() {
 	 * @param int $saturation Color saturation level.
 	 */
 
-	$saturation           = absint( apply_filters( 'twentynineteen_custom_colors_saturation', 100 ) );
+	$saturation           = absint( apply_filters( 'genberg_custom_colors_saturation', 100 ) );
 	$saturation           = $saturation . '%';
 
-	$saturation_selection = absint( apply_filters( 'twentynineteen_custom_colors_saturation_selection', 50 ) );
+	$saturation_selection = absint( apply_filters( 'genberg_custom_colors_saturation_selection', 50 ) );
 	$saturation_selection = $saturation_selection . '%';
 
-	$lightness            = absint( apply_filters( 'twentynineteen_custom_colors_lightness', 33 ) );
+	$lightness            = absint( apply_filters( 'genberg_custom_colors_lightness', 33 ) );
 	$lightness            = $lightness . '%';
 
-	$lightness_hover      = absint( apply_filters( 'twentynineteen_custom_colors_lightness_hover', 23 ) );
+	$lightness_hover      = absint( apply_filters( 'genberg_custom_colors_lightness_hover', 23 ) );
 	$lightness_hover      = $lightness_hover . '%';
 
-	$lightness_selection  = absint( apply_filters( 'twentynineteen_custom_colors_lightness_selection', 90 ) );
+	$lightness_selection  = absint( apply_filters( 'genberg_custom_colors_lightness_selection', 90 ) );
 	$lightness_selection  = $lightness_selection . '%';
 
 	$theme_css = '
@@ -249,5 +249,5 @@ function twentynineteen_custom_colors_css() {
 	 * @param int    $primary_color The user's selected color hue.
 	 * @param string $saturation    Filtered theme color saturation level.
 	 */
-	return apply_filters( 'twentynineteen_custom_colors_css', $css, $primary_color, $saturation );
+	return apply_filters( 'genberg_custom_colors_css', $css, $primary_color, $saturation );
 }
