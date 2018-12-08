@@ -27,18 +27,18 @@ get_header();
 					// Parent post navigation.
 					the_post_navigation(
 						array(
-							'prev_text' => _x( '<span class="meta-nav">Published in</span><br/><span class="post-title">%title</span>', 'Parent post link', 'twentynineteen' ),
+							'prev_text' => _x( '<span class="meta-nav">Published in</span><br/><span class="post-title">%title</span>', 'Parent post link', 'genberg' ),
 						)
 					);
 				} elseif ( is_singular( 'post' ) ) {
 					// Previous/next post navigation.
 					the_post_navigation(
 						array(
-							'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next Post', 'twentynineteen' ) . '</span> ' .
-								'<span class="screen-reader-text">' . __( 'Next post:', 'twentynineteen' ) . '</span> <br/>' .
+							'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next Post', 'genberg' ) . '</span> ' .
+								'<span class="screen-reader-text">' . __( 'Next post:', 'genberg' ) . '</span> <br/>' .
 								'<span class="post-title">%title</span>',
-							'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous Post', 'twentynineteen' ) . '</span> ' .
-								'<span class="screen-reader-text">' . __( 'Previous post:', 'twentynineteen' ) . '</span> <br/>' .
+							'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous Post', 'genberg' ) . '</span> ' .
+								'<span class="screen-reader-text">' . __( 'Previous post:', 'genberg' ) . '</span> <br/>' .
 								'<span class="post-title">%title</span>',
 						)
 					);
